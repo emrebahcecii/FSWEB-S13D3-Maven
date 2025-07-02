@@ -18,16 +18,18 @@ public class Wall {
     }
 
     public void setWidth(double width) {
-        this.width = width;
-        if(width<0){
+        if(width < 0){
             this.width = 0;
+        } else {
+            this.width = width;
         }
     }
 
     public void setHeight(double height) {
-        this.height = height;
-        if(width<0){
-            this.width = 0;
+        if(height < 0){
+            this.height = 0;
+        } else {
+            this.height = height;
         }
     }
     public double getArea(){
